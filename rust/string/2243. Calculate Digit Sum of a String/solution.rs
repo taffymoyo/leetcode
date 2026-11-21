@@ -25,8 +25,6 @@ impl Solution {
                 }
 
                 res += &seg_total.to_string();
-
-                println!("{}", res);
                 i += k;
             }
             s.clone_from(&res); // clones the string while breaking it, in place method (clone for String types)
