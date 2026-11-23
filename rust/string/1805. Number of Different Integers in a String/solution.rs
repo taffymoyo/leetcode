@@ -16,9 +16,11 @@ impl Solution {
                 digit_last = false;
             }
         }
+
         if int.len() != 0 { // handles last integer
             seen.insert(int.trim_start_matches('0').to_string()); 
         }
+
         seen.len() as i32
     }
 }
